@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- <parent> -->
+	<!-- <groupId>org.pentaho.di.plugins</groupId> -->
+	<!-- <artifactId>dummy</artifactId> -->
+	<!-- <version>8.0.0.0-28</version> -->
+	<!-- </parent> -->
+
+	<groupId>org.pentaho.di.plugins</groupId>
+	<artifactId>pentaho-kettle-plugin-sample</artifactId>
+	<version>8.0.0.0-28</version>
+	<packaging>jar</packaging>
+
+	<name>PDI Dummy Plugin Core</name>
+	<description></description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>pentaho-kettle</groupId>
+			<artifactId>kettle-engine</artifactId>
+			<version>8.0.0.0-28</version>
+			<type>jar</type>
+			<scope>system</scope>
+			<systemPath>/home/rleon/Downloads/data-integration/lib/kettle-engine-8.0.0.0-28.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-kettle</groupId>
+			<artifactId>kettle-core</artifactId>
+			<version>8.0.0.0-28</version>
+			<type>jar</type>
+			<scope>system</scope>
+			<systemPath>/home/rleon/Downloads/data-integration/lib/kettle-core-8.0.0.0-28.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>pentaho-kettle</groupId>
+			<artifactId>kettle-ui-swt</artifactId>
+			<version>8.0.0.0-28</version>
+			<type>jar</type>
+			<scope>system</scope>
+			<systemPath>/home/rleon/Downloads/data-integration/lib/kettle-ui-swt-8.0.0.0-28.jar</systemPath>
+		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.eclipse.platform</groupId> -->
+		<!-- <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId> -->
+		<!-- <version>3.114.100</version> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>swt</artifactId>
+			<version>3.3.2</version>
+			<type>jar</type>
+			<scope>system</scope>
+			<systemPath>/home/rleon/Downloads/data-integration/libswt/linux/x86_64/swt.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>jface</artifactId>
+			<version>3.3.0-I20070606-0010</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>pentaho</groupId>
+			<artifactId>metastore</artifactId>
+			<version>8.0.0.0-28</version>
+			<type>jar</type>
+			<scope>system</scope>
+			<systemPath>/home/rleon/Documents/incubadora/pentaho/metastore-8.0.0.0-28.jar</systemPath>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>pentaho-releases</id>
+			<url>http://repository.pentaho.org/artifactory/repo/ </url>
+		</repository>
+	</repositories>
+
+</project>
